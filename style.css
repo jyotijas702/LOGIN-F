@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .container {
@@ -17,29 +18,36 @@ body {
 }
 
 #btn {
-  padding: 10px;
-  background-color: plum;
-  border-radius: 8px;
-  width: 250px;
+  padding: 8px;
+  background-color: #faa0a0;
+  border-radius: 1.25rem;
+  width: 80%;
   cursor: pointer;
   margin-top: 8px;
-  /* display: block;
-  margin-bottom: 20px; */
+  font-size: 1rem;
+  border: 0;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: 0.3s;
 }
 #btn:hover {
-  background-color: rgb(199, 11, 199);
+  background-color: rgb(228, 93, 172);
 }
 
 a {
   text-decoration: none;
 }
 
-input[type="text"],
-input[type="password"] {
+#loginForm > input {
   display: block;
-  padding: 6px;
+  padding: 8px;
   width: 90%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 22px auto;
+  font-size: 15px;
+  border-radius: 1.25rem;
+  border: 2px solid #ebebeb;
+  transition: all 0.375;
 }
 
 label {
@@ -49,7 +57,7 @@ label {
 
 a:hover {
   text-decoration: underline;
-  color: rgb(218, 123, 123);
+  color: rgb(226, 106, 106);
 }
 
 .forget {
@@ -57,4 +65,8 @@ a:hover {
   margin: 10px 0;
   text-align: right;
   color: rgb(199, 11, 199);
+}
+
+#loginForm > input:hover {
+  border: 2px solid pink;
 }

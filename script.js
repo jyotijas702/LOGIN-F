@@ -22,7 +22,7 @@ form.addEventListener("submit", function (e) {
     feedback.style.color = "green";
     form.reset();
   } else {
-    feedback.textContent = "❌ Invalid credentials!";
+    feedback.textContent = "Invalid credentials!";
     feedback.style.color = "red";
   }
 });
