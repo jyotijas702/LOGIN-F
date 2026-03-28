@@ -8,23 +8,13 @@ feedback.style.fontWeight = "bold";
 feedback.style.marginTop = "10px";
 form.appendChild(feedback);
 
-const correctUsername = "jyoti.kumari";
-const correctPassword = "jyoti@2026";
-
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const username = nameInput.value;
-  const password = passwordInput.value;
+  feedback.textContent = "✅ Login successful!";
+  feedback.style.color = "green";
 
-  if (username === correctUsername && password === correctPassword) {
-    feedback.textContent = "✅ Login successful!";
-    feedback.style.color = "green";
-    form.reset();
-  } else {
-    feedback.textContent = "Invalid credentials!";
-    feedback.style.color = "red";
-  }
+  form.reset();
 });
 
 forgetPassword.addEventListener("click", function (e) {
